@@ -1,0 +1,25 @@
+{
+  "name": "mmg",
+  "version": "1.0.0",
+  "description": "Mongoose With Typescript",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dmartz86/montes.git"
+  },
+  "keywords": [
+    "model",
+    "type"
+  ],
+  "author": "Daniel Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmartz86/montes/issues"
+  },
+  "homepage": "https://github.com/dmartz86/montes#readme"
+}

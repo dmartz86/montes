@@ -1,0 +1,11 @@
+{
+  "version": false,
+  "dependencies": {},
+  "ambientDependencies": {
+    "mongoose": "registry:dt/mongoose#3.8.5+20160505185535",
+    "node": "registry:dt/node#4.0.0+20160509154515"
+  },
+  "exclude": [
+    "./typings"
+  ]
+}
