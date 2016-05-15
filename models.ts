@@ -20,7 +20,8 @@ export const PersonSchema = new Schema({
   posts: [{ type: Schema.Types.ObjectId, ref: 'Post' }]
 },
   {
-    timestamps: true
+    timestamps: true,
+    strict: false
   });
 
 export const PostSchema = new Schema({

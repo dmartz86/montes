@@ -4,7 +4,7 @@ const log = console.log;
 
 async function bloggin() {
   await connect('mongodb://localhost/blog');
-  const daniel = await new Person({name: 'Daniel'}).save();
+  const daniel = await new Person({name: 'Daniel', role: 'dev'}).save();
   const intro = await new Post({title: 'This is my new Blog', author: daniel._id}).save();
   const infor = await new Post({title: 'A funny entry', author: daniel._id}).save();
   daniel.posts.push(intro._id);
