@@ -2,7 +2,7 @@ import {connect} from 'mongoose';
 import {Person, Post} from './models';
 const log = console.log;
 
-async function bloggin() {
+async function blogging() {
   await connect('mongodb://localhost/blog');
   const daniel = await new Person({name: 'Daniel', role: 'dev'}).save();
   const intro = await new Post({title: 'This is my new Blog', author: daniel._id}).save();
@@ -16,4 +16,4 @@ async function bloggin() {
   return 'done';
 }
 
-bloggin().then(log).catch(log);
+blogging().then(log).catch(log);
